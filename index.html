@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sweet Brew Coffee Co.</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-anim-wrap">
+                <img src="Logo.jpg" alt="Sweet Brew Coffee Co. Logo" class="logo" id="main-logo">
+            </div>
+            <div class="shop-info">
+                <h1>Sweet Brew Coffee Co.</h1>
+                <p>34 Francis Rd, Ladysmith 3370</p>
+                <div class="contact-icons">
+                    <a href="https://wa.me/27724166065" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="mailto:hels.deboer@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://facebook.com/2298190957154930" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <button onclick="showPage('home')">Home</button>
+        <button onclick="showPage('menu')">Menu</button>
+        <button onclick="showPage('events')">Events</button>
+        <button onclick="showPage('contact')">Contact</button>
+        <button onclick="showPage('review')">Review</button>
+    </nav>
+    <main>
+        <section id="home-page">
+            <div class="poetic-intro">
+                <h2>Welcome to Sweet Brew Coffee Co.</h2>
+                <p class="poem">In the heart of Ladysmith, where stories unfold,<br>
+                The aroma of coffee, the warmth in the cold.<br>
+                Cakes that whisper secrets, brews that spark delight,<br>
+                Here, every cup is comfort, every slice a bite of light.<br>
+                Gathered in laughter, in moments we share,<br>
+                Sweet Brew Coffee Co. — where joy fills the air.</p>
+            </div>
+            <div class="story-gallery">
+                <div class="story-img dancing-img"><img src="display 003.jpg" alt="Dancing Coffee"></div>
+                <div class="story-img dancing-img"><img src="display 005.jpg" alt="Dancing Cake"></div>
+                <div class="story-img dancing-img"><img src="display 007.jpg" alt="Dancing Friends"></div>
+            </div>
+            <div class="story-text">
+                <p>Every morning, the first pour is a promise — rich, bold, and brimming with hope. Our cakes are baked with stories, each layer a memory, each crumb a celebration. Friends meet, laughter echoes, and the world slows down for a moment of sweetness. At Sweet Brew, coffee is more than a drink; it’s a ritual, a reason, a little bit of magic in every mug.</p>
+            </div>
+            <section class="gallery">
+                <h2>Our Coffee & Cakes</h2>
+                <div class="gallery-grid home-anim-gallery">
+                    <img src="display 00.jpg" alt="Coffee and Cake 00">
+                    <img src="display 001.jpg" alt="Coffee and Cake 001">
+                    <img src="display 002.jpg" alt="Coffee and Cake 002">
+                </div>
+            </section>
+        </section>
+        <section id="menu-page" style="display:none;">
+            <h2>Menu</h2>
+            <div class="menu-slider-snake">
+                <div class="menu-slider-track">
+                    <img src="display 00.jpg" alt="Menu 00" class="menu-slide-img">
+                    <img src="display 001.jpg" alt="Menu 001" class="menu-slide-img">
+                    <img src="display 002.jpg" alt="Menu 002" class="menu-slide-img">
+                    <img src="display 003.jpg" alt="Menu 003" class="menu-slide-img">
+                    <img src="display 004.jpg" alt="Menu 004" class="menu-slide-img">
+                    <img src="display 005.jpg" alt="Menu 005" class="menu-slide-img">
+                    <img src="display 006.jpg" alt="Menu 006" class="menu-slide-img">
+                    <img src="display 007.jpg" alt="Menu 007" class="menu-slide-img">
+                    <img src="display 008.jpg" alt="Menu 008" class="menu-slide-img">
+                    <img src="display 009.jpg" alt="Menu 009" class="menu-slide-img">
+                    <!-- Duplicate for infinite effect -->
+                    <img src="display 00.jpg" alt="Menu 00" class="menu-slide-img">
+                    <img src="display 001.jpg" alt="Menu 001" class="menu-slide-img">
+                    <img src="display 002.jpg" alt="Menu 002" class="menu-slide-img">
+                    <img src="display 003.jpg" alt="Menu 003" class="menu-slide-img">
+                    <img src="display 004.jpg" alt="Menu 004" class="menu-slide-img">
+                    <img src="display 005.jpg" alt="Menu 005" class="menu-slide-img">
+                    <img src="display 006.jpg" alt="Menu 006" class="menu-slide-img">
+                    <img src="display 007.jpg" alt="Menu 007" class="menu-slide-img">
+                    <img src="display 008.jpg" alt="Menu 008" class="menu-slide-img">
+                    <img src="display 009.jpg" alt="Menu 009" class="menu-slide-img">
+                </div>
+            </div>
+        </section>
+        <section id="events-page" style="display:none;">
+            <h2>Past Events</h2>
+            <div class="event-list">
+                <div class="event">
+                    <img src="Event 1.jpg" alt="Paint a Cake Event" class="event-img">
+                    <h3>Paint a Cake</h3>
+                    <p><i class="fas fa-calendar-alt"></i> Saturday 30 August 2025</p>
+                </div>
+                <div class="event">
+                    <img src="Event 2.jpg" alt="Sip & Sonnet Poetry Event" class="event-img">
+                    <img src="event22.jpg" alt="Sip & Sonnet Poetry Event 2" class="event-img" style="margin-top:0.5rem;">
+                    <h3>Sip & Sonnet Poetry Event Series</h3>
+                    <p><i class="fas fa-calendar-alt"></i> Thursday 24 October 2024</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact-page" style="display:none;">
+            <h2>Contact Us</h2>
+            <div class="contact-details">
+                <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/27724166065" target="_blank">072 416 6065</a></p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:hels.deboer@gmail.com">hels.deboer@gmail.com</a></p>
+                <p><i class="fab fa-facebook"></i> <a href="https://facebook.com/2298190957154930" target="_blank">Sweet Brew Coffee Co</a></p>
+            </div>
+        </section>
+        <section id="review-page" style="display:none;">
+            <h2>Leave a Review</h2>
+            <form id="review-form">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="review">Review:</label><br>
+                <textarea id="review" name="review" rows="4" required></textarea><br><br>
+                <button type="submit">Submit Review</button>
+            </form>
+            <div id="reviews-list">
+                <!-- Reviews will appear here -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Sweet Brew Coffee Co. | Designed with &hearts; for coffee lovers</p>
+    </footer>
+    <script>
+    // Navigation between pages
+    function showPage(page) {
+        document.getElementById('home-page').style.display = (page === 'home') ? '' : 'none';
+        document.getElementById('menu-page').style.display = (page === 'menu') ? '' : 'none';
+        document.getElementById('events-page').style.display = (page === 'events') ? '' : 'none';
+        document.getElementById('contact-page').style.display = (page === 'contact') ? '' : 'none';
+        document.getElementById('review-page').style.display = (page === 'review') ? '' : 'none';
+        // Only animate logo on home page
+        var logo = document.getElementById('main-logo');
+        if (logo) {
+            if (page === 'home') {
+                logo.classList.add('logo-animate');
+            } else {
+                logo.classList.remove('logo-animate');
+            }
+        }
+    }
+
+    // Menu slider animation (auto sliding)
+    let slider = document.getElementById('menu-slider');
+    let scrollAmount = 0;
+    function autoSlide() {
+        if (slider && slider.scrollWidth > slider.clientWidth) {
+            scrollAmount += 1.2;
+            if (scrollAmount > slider.scrollWidth - slider.clientWidth) {
+                scrollAmount = 0;
+            }
+            slider.scrollTo({ left: scrollAmount, behavior: 'smooth' });
+        }
+        requestAnimationFrame(autoSlide);
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+        slider = document.getElementById('menu-slider');
+        if (slider) autoSlide();
+        // Animate logo on load
+        var logo = document.getElementById('main-logo');
+        if (logo) logo.classList.add('logo-animate');
+
+        // Home page animated images
+        const rotatingImgs = document.querySelectorAll('.rotating-img');
+        window.addEventListener('scroll', function() {
+            const scrollY = window.scrollY;
+            rotatingImgs.forEach((img, i) => {
+                img.style.transform = `rotate(${scrollY/8 + i*20}deg) scale(${1 + 0.05*Math.sin(scrollY/60 + i)})`;
+            });
+        });
+
+        // Dancing images
+        const dancingImgs = document.querySelectorAll('.dancing-img img');
+        dancingImgs.forEach((img, i) => {
+            img.style.animation = `dance 2.5s ${i*0.3}s infinite alternate cubic-bezier(0.4,0,0.2,1)`;
+        });
+    });
+
+    // Review form logic
+    const reviewForm = document.getElementById('review-form');
+    const reviewsList = document.getElementById('reviews-list');
+    if (reviewForm) {
+        reviewForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const review = document.getElementById('review').value;
+            const reviewDiv = document.createElement('div');
+            reviewDiv.className = 'review-item';
+            reviewDiv.innerHTML = `<strong>${name}</strong><p>${review}</p>`;
+            reviewsList.prepend(reviewDiv);
+            reviewForm.reset();
+        });
+    }
+    </script>
+</body>
+</html>
